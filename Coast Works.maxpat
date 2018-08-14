@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 0.0, 45.0, 663.0, 472.0 ],
+		"rect" : [ 238.0, 45.0, 663.0, 472.0 ],
 		"bgcolor" : [ 0.141176, 0.141176, 0.141176, 1.0 ],
 		"editing_bgcolor" : [ 0.14, 0.14, 0.14, 1.0 ],
 		"bglocked" : 0,
@@ -60,9 +60,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 470.0, 520.0, 141.0, 47.0 ],
+					"patching_rect" : [ 470.0, 520.0, 142.0, 47.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 120.049461, 445.0, 421.0, 17.0 ],
+					"presentation_rect" : [ 120.049461, 448.0, 421.0, 17.0 ],
 					"style" : "",
 					"text" : " To save settings on the 0-Coast, hold PGM_A to enter the Program Pages, then hold PGM_B to save. ",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -2837,7 +2837,7 @@
 					"hint" : "send notes",
 					"id" : "obj-30",
 					"maxclass" : "kslider",
-					"mode" : 1,
+					"mode" : 2,
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"offset" : 48,
@@ -5613,13 +5613,13 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-424" : [ "live.text[1]", "live.text", 0 ],
 			"obj-96" : [ "live.dial[11]", "live.dial", 0 ],
+			"obj-424" : [ "live.text[1]", "live.text", 0 ],
 			"obj-29" : [ "live.dial[62]", "Mod", 0 ],
 			"obj-281" : [ "live.tab[10]", "live.tab", 0 ],
 			"obj-371" : [ "live.tab[29]", "live.tab", 0 ],
-			"obj-373" : [ "live.dial[18]", "live.dial", 0 ],
 			"obj-297" : [ "live.tab[61]", "live.tab", 0 ],
+			"obj-373" : [ "live.dial[18]", "live.dial", 0 ],
 			"obj-357" : [ "umenu[8]", "umenu", 0 ],
 			"obj-30" : [ "kslider[3]", "kslider", 0 ],
 			"obj-282" : [ "live.tab[13]", "live.tab", 0 ],
@@ -5630,8 +5630,8 @@
 			"obj-306" : [ "live.dial[43]", "live.dial", 0 ],
 			"obj-106" : [ "live.tab[3]", "live.tab", 0 ],
 			"obj-159" : [ "live.tab[15]", "live.tab[5]", 0 ],
-			"obj-87" : [ "live.dial[19]", "Touch", 0 ],
 			"obj-363" : [ "live.dial[16]", "live.dial", 0 ],
+			"obj-87" : [ "live.dial[19]", "Touch", 0 ],
 			"obj-28" : [ "live.dial[4]", "live.dial", 0 ],
 			"obj-370" : [ "live.tab[28]", "live.tab[2]", 0 ],
 			"obj-37" : [ "live.tab[24]", "live.tab[5]", 0 ],
@@ -5662,7 +5662,6 @@
 			}
  ],
 		"autosave" : 0,
-		"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 		"bgfillcolor_type" : "gradient",
 		"bgfillcolor_color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 		"bgfillcolor_color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],

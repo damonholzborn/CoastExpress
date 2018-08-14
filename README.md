@@ -10,8 +10,10 @@
     * MIDI clock out
 * The interface is reflected in Mira, so if you have an iPad you can interact with it remotely. 
 
-Once I'm convinced it's solid I'll submit it to available through the Max Package Manager.
+Once I'm convinced it's solid I'll submit it to the Max Package Manager.
+
+Make sure you place the Coast Works folder in your Max search path (and restart Max, if open).
 
 There's not much in the way of documentation yet, but if you understand how the MIDI stuff works in the 0-Coast, it should be fairly self-explanatory. That said, there is tooltip help when you hover over any GUI widget and additional info in the Max Clue Window (Window > Clue Window), so you're not completely on your own. 
 
-It saves the last settings so when the patch is launched it will automatically send the last state. Don't forget that if you want to save the setting on the 0-Coast (so that state is maintained through a power cycle), you have to do so on the 0-Coast itself: hold PGM A to enter the Program Pages, then hold PGM B to save.
+It saves the last settings so, when the patch is launched it will automatically send the last state. Don't forget that if you want to save the setting on the 0-Coast (so that state is maintained through a power cycle), you have to do so on the 0-Coast itself: hold PGM A to enter the Program Pages, then hold PGM B to save.
