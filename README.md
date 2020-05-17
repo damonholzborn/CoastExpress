@@ -1,4 +1,4 @@
-# Coast Works - beta
+# Coast Works
 
 0-Coast MIDI settings manager for Max. It's conceptually similar to the Max for Live patch that Make Noise distributes, with the following differences:
 
@@ -9,10 +9,6 @@
     * A dial to send Mod Wheel
     * MIDI clock out
 * The interface is reflected in Mira, so if you have an iPad you can interact with it remotely. 
-
-Once I'm convinced it's solid I'll submit it to the Max Package Manager.
-
-Make sure you place the Coast Works folder in your Max search path (and restart Max, if open).
 
 There's not much in the way of documentation yet, but if you understand how the MIDI stuff works in the 0-Coast, it should be fairly self-explanatory. That said, there is tooltip help when you hover over any GUI widget and additional info in the Max Clue Window (Window > Clue Window), so you're not completely on your own. 
 
