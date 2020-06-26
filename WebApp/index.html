@@ -8,8 +8,8 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 	<link rel="manifest" href="/site.webmanifest">
-	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#212121">
-	<meta name="msapplication-TileColor" content="#da532c">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#1d1d1d">
+	<meta name="msapplication-TileColor" content="#ffc40d">
 	<meta name="theme-color" content="#ffffff">
 
 	<meta property="og:title" content="Coast Express">
@@ -30,7 +30,7 @@
 
 <header id="header">
 	<div>
-		<img src="coastexpresslogo.png" id="logo">
+		<img src="coastexpresslogo2.png" id="logo">
 	</div>
 
 	<div>
@@ -44,15 +44,40 @@
 	<div id="welcome_message">
 
 		<div id="welcome_text">
-			<p>Welcome to <i>Coast Express</i>, a MIDI settings manager for the Make Noise 0-Coast.</p>
+			<p>Welcome to <i>Coast Express</i>, a MIDI settings utility for the Make Noise 0-Coast.</p>
 
-			<h2>Process</h2>
+			<h2>System Requirements</h2>
+
+			<p><i>Coast Express</i> is currently in beta. These requirements will be updated as further testing is completed.</p>
+
+			<ul>
+				<li>Chrome is currently the only officially recommended browser, though Opera and Edge should also work. <i>All other browsers will not work</i>.</li>
+				<li>Testing has only been done on macOS, but it should work in Windows and Linux as well. Some browsers on Android might work as well.</li>
+				<li>You will need a MIDI interface connected to your computer.</li>
+			</ul>
+
+			<h2>Intructions</h2>
 
 			<ol>
+				<li>Connect your MIDI interface before loading the <i>Coast Express</i> page.</li>
 				<li>Choose the MIDI port of your 0-Coast from the pull-down menu.</li>
-				<li>Change settings.</li>
-				<li>(Optional) Save settings on the 0-Coast: hold PGM A to enter the Program Pages, then hold PGM B to save.</li>
+				<li>Change settings using the buttons and sliders.</li>
 			</ol>
+
+			<p>Note that the settings are not automatically saved on the 0-Coast so if you turn the power off the settings will be lost. To save settings on the 0-Coast, hold PGM A to enter the Program Pages, then hold PGM B to save.</p>
+
+			<h2>Coast Express for Max</h2>
+
+			Coast Express is also available in a version for Cycling '74's Max. The Max version provides a few extra widgets not (yet?) available for the web version:
+
+			<ul>
+				<li>An onscreen keyboard to send MIDI notes.</li>
+				<li>A dial to send Mod Wheel.</li>
+				<li>MIDI clock out.</li>
+				<li>Interface is reflected in Mira for display on an iPad.</li>
+			</ul>
+
+			<a href="safdasddf">Download the Max patch.</a>
 
 		</div>
 		<div id="contact_info">
@@ -68,6 +93,10 @@
 
 <main>
 
+	<section>
+		<div id="save_instructions">To save settings on the 0-Coast: hold PGM A to enter the Program Pages, then hold PGM B to save.</div>
+	</section>
+
 	<!-- ***************************   MIDI Port   *************************** -->
 
 	<section>
@@ -76,10 +105,10 @@
 			MIDI Port
 		</h2>
 
-		<div class="item patch_info">
+		<div class="item midi_port">
 			<div>
-				<select id="midiPort" class="patch_info pointy">
-					<option value="Select MIDI Port">--- Select MIDI Port ---</option>
+				<select id="midiPort" class="midi_port pointy">
+					<option value="--- Select MIDI Port --- ">--- Select MIDI Port ---</option>
 				</select>
 			</div>
 		</div>

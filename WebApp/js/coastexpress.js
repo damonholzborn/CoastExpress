@@ -1,6 +1,7 @@
 var headerArea;
 var menuButton;
 var isLoaded = false;
+var firstRun = true;
 
 const midiMap = {
 	'a': {
@@ -38,7 +39,8 @@ let currentMIDIPort;
 const savedSettings = localStorage.savedSettings;
 
 if (savedSettings) {
-	currentSettings = JSON.parse(savedSettings);;
+	firstRun = false;
+	currentSettings = JSON.parse(savedSettings);
 }
 else {
 	currentSettings = {
@@ -74,9 +76,13 @@ else {
 	}
 }
 
-// let midiPortMenu;
-
 window.onload = function() {
+
+	if (firstRun) {
+		setTimeout(function() {
+			menuButton.click();
+		}, 1100);
+	}
 
 	// ********* Header Setup *********
 
@@ -88,7 +94,7 @@ window.onload = function() {
 		event.preventDefault()
 		if (!menuButton.classList.contains('open')) {
 			menuButton.classList.add('open');
-			headerArea.style.height = (document.getElementById('welcome_message').clientHeight + 130) + 'px';
+			headerArea.style.height = (document.getElementById('welcome_message').clientHeight + 48) + 'px';
 		}
 		else {
 			menuButton.classList.remove('open');
@@ -109,16 +115,23 @@ window.onload = function() {
 	// ********* Telegraphy *********
 
 	Telegraphy.init({ midi: true }, function() {
+		let portNames = [];
 		Telegraphy.MIDI.outputs.forEach(output => {
 			var option = document.createElement('option');
 			option.textContent = output.name;
 			option.value = output.name;
 			midiPortMenu.add(option);
+			portNames.push(output.name);
 		});
 
 		if (currentSettings.midiPort) {
-			midiPortMenu.value = currentSettings.midiPort;
-			currentMIDIPort = Telegraphy.MIDI.getOutputByName(midiPortMenu.value);
+			if (portNames.indexOf(currentSettings.midiPort) !== -1) {
+				midiPortMenu.value = currentSettings.midiPort;
+				currentMIDIPort = Telegraphy.MIDI.getOutputByName(midiPortMenu.value);
+			}
+			else {
+				alert('The previously selected MIDI port -- ' + currentSettings.midiPort + ' --  is not available. Connect the MIDI interface and relaod the page or select another port from the menu.');
+			}
 		}
 
 		// ********* Init Values *********
