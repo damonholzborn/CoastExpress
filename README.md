@@ -1,6 +1,6 @@
 # Coast Express
 
-0-Coast MIDI settings manager for Max. There are two versions:
+0-Coast MIDI settings manager. There are two versions:
 
 ## For the Web
 
