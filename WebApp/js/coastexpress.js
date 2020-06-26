@@ -84,6 +84,70 @@ window.onload = function() {
 		}, 1100);
 	}
 
+	// ********* Nexus Options *********
+
+	Nexus.colors.accent = "#ECEDEC";
+	Nexus.colors.fill = "#1d1d1d";
+	Nexus.colors.dark = "#ECEDEC";
+	const sliderOptions = {
+		'size': [320, 30],
+		'mode': 'absolute',
+		'min': 0,
+		'max': 127,
+		'step': 1,
+		'value': 0
+	}
+
+	// ********* MIDI A & B Sliders *********
+
+	const aBendRange = new Nexus.Slider('#aBendRange', sliderOptions);
+	aBendRange.on('change', function(value) { sendSetting('a', 'bendRange', value) });
+	const aBendRangeValue = new Nexus.Number('#aBendRangeValue')
+	aBendRangeValue.link(aBendRange);
+
+	const aAftertouch = new Nexus.Slider('#aAftertouch', sliderOptions);
+	aAftertouch.on('change', function(value) { sendSetting('a', 'aftertouch', value) });
+	const aAftertouchValue = new Nexus.Number('#aAftertouchValue');
+	aAftertouchValue.link(aAftertouch);
+
+	const aMinVelocity = new Nexus.Slider('#aMinVelocity', sliderOptions);
+	aMinVelocity.min = 1;
+	aMinVelocity.on('change', function(value) { sendSetting('a', 'minVelocity', value) });
+	const aMinVelocityValue = new Nexus.Number('#aMinVelocityValue');
+	aMinVelocityValue.link(aMinVelocity);
+
+	const bBendRange = new Nexus.Slider('#bBendRange', sliderOptions);
+	bBendRange.on('change', function(value) { sendSetting('b', 'bendRange', value) });
+	const bBendRangeValue = new Nexus.Number('#bBendRangeValue');
+	bBendRangeValue.link(bBendRange);
+
+	const bAftertouch = new Nexus.Slider('#bAftertouch', sliderOptions);
+	bAftertouch.on('change', function(value) { sendSetting('b', 'aftertouch', value) });
+	const bAftertouchValue = new Nexus.Number('#bAftertouchValue');
+	bAftertouchValue.link(bAftertouch);
+
+	const bMinVelocity = new Nexus.Slider('#bMinVelocity', sliderOptions);
+	bMinVelocity.min = 1;
+	bMinVelocity.on('change', function(value) { sendSetting('b', 'minVelocity', value) });
+	const bMinVelocityValue = new Nexus.Number('#bMinVelocityValue');
+	bMinVelocityValue.link(bMinVelocity);
+
+	// ********* Portamento Slider *********
+
+	const portamento = new Nexus.Slider('#portamento', sliderOptions);
+	portamento.on('change', function(value) { sendSetting('keyboard', 'portamento', value) });
+	const portamentoValue = new Nexus.Number('#portamentoValue');
+	portamentoValue.link(portamento);
+
+	// ********* Tempo Div Slider *********
+
+	const tempoDiv = new Nexus.Slider('#tempoDiv', sliderOptions);
+	tempoDiv.min = 1;
+	tempoDiv.on('change', function(value) { sendSetting('clock', 'tempoDiv', value) });
+	const tempoDivValue = new Nexus.Number('#tempoDivValue');
+	tempoDivValue.link(tempoDiv);
+
+
 	// ********* Header Setup *********
 
 	headerArea = document.getElementById('header');
@@ -157,69 +221,6 @@ window.onload = function() {
 			});
 		}
 	}
-
-	// ********* Nexus Options *********
-
-	Nexus.colors.accent = "#ECEDEC";
-	Nexus.colors.fill = "#1d1d1d";
-	Nexus.colors.dark = "#ECEDEC";
-	const sliderOptions = {
-		'size': [320, 30],
-		'mode': 'absolute',
-		'min': 0,
-		'max': 127,
-		'step': 1,
-		'value': 0
-	}
-
-	// ********* MIDI A & B Sliders *********
-
-	const aBendRange = new Nexus.Slider('#aBendRange', sliderOptions);
-	aBendRange.on('change', function(value) { sendSetting('a', 'bendRange', value) });
-	const aBendRangeValue = new Nexus.Number('#aBendRangeValue')
-	aBendRangeValue.link(aBendRange);
-
-	const aAftertouch = new Nexus.Slider('#aAftertouch', sliderOptions);
-	aAftertouch.on('change', function(value) { sendSetting('a', 'aftertouch', value) });
-	const aAftertouchValue = new Nexus.Number('#aAftertouchValue');
-	aAftertouchValue.link(aAftertouch);
-
-	const aMinVelocity = new Nexus.Slider('#aMinVelocity', sliderOptions);
-	aMinVelocity.min = 1;
-	aMinVelocity.on('change', function(value) { sendSetting('a', 'minVelocity', value) });
-	const aMinVelocityValue = new Nexus.Number('#aMinVelocityValue');
-	aMinVelocityValue.link(aMinVelocity);
-
-	const bBendRange = new Nexus.Slider('#bBendRange', sliderOptions);
-	bBendRange.on('change', function(value) { sendSetting('b', 'bendRange', value) });
-	const bBendRangeValue = new Nexus.Number('#bBendRangeValue');
-	bBendRangeValue.link(bBendRange);
-
-	const bAftertouch = new Nexus.Slider('#bAftertouch', sliderOptions);
-	bAftertouch.on('change', function(value) { sendSetting('b', 'aftertouch', value) });
-	const bAftertouchValue = new Nexus.Number('#bAftertouchValue');
-	bAftertouchValue.link(bAftertouch);
-
-	const bMinVelocity = new Nexus.Slider('#bMinVelocity', sliderOptions);
-	bMinVelocity.min = 1;
-	bMinVelocity.on('change', function(value) { sendSetting('b', 'minVelocity', value) });
-	const bMinVelocityValue = new Nexus.Number('#bMinVelocityValue');
-	bMinVelocityValue.link(bMinVelocity);
-
-	// ********* Portamento Slider *********
-
-	const portamento = new Nexus.Slider('#portamento', sliderOptions);
-	portamento.on('change', function(value) { sendSetting('keyboard', 'portamento', value) });
-	const portamentoValue = new Nexus.Number('#portamentoValue');
-	portamentoValue.link(portamento);
-
-	// ********* Tempo Div Slider *********
-
-	const tempoDiv = new Nexus.Slider('#tempoDiv', sliderOptions);
-	tempoDiv.min = 1;
-	tempoDiv.on('change', function(value) { sendSetting('clock', 'tempoDiv', value) });
-	const tempoDivValue = new Nexus.Number('#tempoDivValue');
-	tempoDivValue.link(tempoDiv);
 
 	// ***************************   Functions   ***************************
 
