@@ -152,7 +152,6 @@ window.onload = function() {
 				}
 			}
 			if (newPatchName === null) {
-				console.log('doh');
 				patchNameField.value = workingPatch.patchName;
 			}
 			else {
@@ -298,7 +297,6 @@ window.onload = function() {
 		}
 
 		if (!savedWorkingPatchName && localStorage['savedSettings']) {
-			console.log('yo');
 			let legacySettings = JSON.parse(localStorage['savedSettings']);
 			legacySettings.patchName = 'Untitled 1';
 			localStorage.setItem('Untitled 1', JSON.stringify(legacySettings));
@@ -524,7 +522,6 @@ window.onload = function() {
 		patchString = patchString.replace('patchName', '/t');
 		patchString = patchString.replace('patchNotes', '/u');
 		var patchCompressed = LZString.compressToEncodedURIComponent(patchString);
-		console.log(patchCompressed);
 		var copyPatchURL = prompt('Your patch is encoded in the URL below. To share your patch, copy the link (make sure to get the whole thing). You can then paste the URL in an email to send to a friend, share at the Exquisite Coast thread on llllllll.co, or post on social media.', window.location.href + '?patch=' + patchCompressed);
 	}
 
@@ -569,7 +566,6 @@ window.onload = function() {
 			alert('The patch appears to be invalid. Please check the URL and try again');
 			return undefined
 		}
-		console.log(sharedPatchUncompressedObject);
 		var savedWorkingPatchName = sharedPatchUncompressedObject.patchName;
 		var cancelLoad = false;
 		while (Object.keys(localStorage).indexOf(savedWorkingPatchName) !== -1 && !cancelLoad) {
