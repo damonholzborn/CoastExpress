@@ -14,11 +14,12 @@
 
 	<meta property="og:title" content="Coast Express">
 	<meta property="og:description" content="A MIDI settings manager for the Make Noise 0-Coast.">
-	<meta property="og:url" content="http://ce.rustle.works">
-	<meta property="og:image" content="http://ce.rustle.works/ogimage.png">
+	<meta property="og:url" content="https://ce.rustle.works">
+	<meta property="og:image" content="https://ce.rustle.works/ogimage.png">
 
-	<title>Exquisite Coast</title>
+	<title>Coast Express</title>
 
+	<script src="/lz-string.min.js"></script>
 	<script src="/js/webmidi.min.js"></script>
 	<script src="/js/telegraphy.js"></script>
 	<script src="/js/NexusUI.min.js"></script>
@@ -47,24 +48,29 @@
 			<p>Welcome to <i>Coast Express</i>, a MIDI settings utility for the Make Noise 0-Coast.</p>
 
 			<h2>System Requirements</h2>
-
-			<p><i>Coast Express</i> is currently in beta. These requirements will be updated as further testing is completed.</p>
-
 			<ul>
-				<li>Chrome is currently the only officially recommended browser, though Opera and Edge should also work. <i>All other browsers will not work</i>.</li>
-				<li>Testing has only been done on macOS, but it should work in Windows and Linux as well. Some browsers on Android might work as well.</li>
-				<li>You will need a MIDI interface connected to your computer.</li>
+				<li>macOS, Windows, or Linux.</li>
+				<li>Chrome, Opera and Edge are the only supported browsers. <i>All other browsers will not work</i>.</li>
+				<li>A MIDI interface connected to your computer.</li>
 			</ul>
 
-			<h2>Intructions</h2>
+			<h2>Instructions</h2>
 
 			<ol>
-				<li>Connect your MIDI interface before loading the <i>Coast Express</i> page.</li>
+				<li>Connect the MIDI interface to your computer before loading the <i>Coast Express</i> page (or reload the page after connecting the interface).</li>
 				<li>Choose the MIDI port of your 0-Coast from the pull-down menu.</li>
 				<li>Change settings using the buttons and sliders.</li>
 			</ol>
 
 			<p>Note that the settings are not automatically saved on the 0-Coast so if you turn the power off the settings will be lost. To save settings on the 0-Coast, hold PGM A to enter the Program Pages, then hold PGM B to save.</p>
+
+			<h2>Some Notes About this Web App</h2>
+
+			<ul>
+				<li>Your patch information is not stored on a server, all data is saved to your browser. This means that your settings will only be available in the browser that you used to create the patch. You might want to save the links to any important settings somewhere else for safekeeping.</li>
+				<li>Your patch is automatically saved as you work so any patches you've worked on will be waiting for you when you return (with the same browser).</li>
+				<li>If you run into any issues, please <a href="mailto: damon@rustleworks.com">let me know</a>. Be sure to include as much detail as you can in your message &mdash; browser, device, OS version, what you were doing, etc.</li>
+			</ul>
 
 			<h2>Coast Express for Max</h2>
 
@@ -77,7 +83,7 @@
 				<li>Interface is reflected in Mira for display on an iPad.</li>
 			</ul>
 
-			<a href="safdasddf">Download the Max patch.</a>
+			<a href="https://github.com/damonholzborn/CoastExpress/releases">Download the Max patch.</a>
 
 		</div>
 		<div id="contact_info">
@@ -95,6 +101,58 @@
 
 	<section>
 		<div id="save_instructions">To save settings on the 0-Coast: hold PGM A to enter the Program Pages, then hold PGM B to save.</div>
+	</section>
+
+
+	<!-- ***************************   MIDI Port   *************************** -->
+
+	<section>
+
+		<h2>
+			Patch Info
+		</h2>
+
+			<!-- ********* Patch Name ********* -->
+
+			<div class="item patch_info active">
+				<div>
+					Patch Name
+				</div>
+				<div>
+					<select id="patch_name" class="patch_info">
+						<option value="New Patch">New Patch</option>
+						<option value="Save As...">Save As...</option>
+						<option value="Rename">Rename</option>
+						<option value="Delete">Delete</option>
+						<option value="---------">---------</option>
+					</select>
+				</div>
+			</div>
+
+			<!-- ********* Patch Notes ********* -->
+
+			<div class="item patch_info active">
+				<div>
+					Patch Notes
+				</div>
+				<div>
+					<textarea id="patch_notes" class="patch_info" placeholder=""></textarea>
+				</div>
+			</div>
+
+
+			<!-- ********* Share Patch ********* -->
+
+			<div class="item patch_info active">
+				<div>
+				</div>
+				<div id="share_area">
+					<div id="get_share_link" class="pointy">
+						Get Share Link
+					</div>
+				</div>
+			</div>
+
 	</section>
 
 	<!-- ***************************   MIDI Port   *************************** -->
