@@ -65,7 +65,7 @@
 					"presentation" : 1,
 					"presentation_linecount" : 11,
 					"presentation_rect" : [ 10.549468994140625, 500.0, 640.0, 154.0 ],
-					"text" : "1) Connect the MIDI interface between your computer and 0-Coast before loading this patch.\n\n2) If you have firmware version 1.6.8 or above, enter the Program Pages on your 0-Coast by holding PGM_A until \n    you see MIDI_A and MIDI_B flash twice. You can ignore this step if your 0-Coast has an older version of the\n    firmware.\n\n3) Choose the MIDI port of your 0-Coast from the pull-down menu above.\n\n4) Change settings using the buttons and sliders.\n\n5) To save the settings on your 0-Coast and exit the Program Pages hold PGM_B.",
+					"text" : "1) Connect the MIDI interface between your computer and 0-Coast before loading this patch.\n\n2) If you have firmware version 1.6.8 or above, enter the Program Pages on your 0-Coast by holding PGM_A until \n    you see MIDI_A and MIDI_B flash twice. You can ignore this step if your 0-Coast has an older version of the\n    firmware.\n\n3) Choose the MIDI port of your 0-Coast from the pull-down menu above.\n\n4) Change settings using the buttons and knobs.\n\n5) To save the settings on your 0-Coast and exit the Program Pages hold PGM_B.",
 					"textcolor" : [ 0.968627450980392, 0.968627450980392, 0.968627450980392, 1.0 ]
 				}
 
