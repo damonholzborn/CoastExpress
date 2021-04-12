@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 5,
+			"revision" : 10,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 0.0, 45.0, 664.0, 476.0 ],
+		"rect" : [ 0.0, 45.0, 663.0, 666.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,38 @@
 		"subpatcher_template" : "---TEMPLATE---",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontface" : 1,
+					"fontsize" : 14.0,
+					"id" : "obj-54",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 328.549468994140625, 588.0, 185.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 10.549468994140625, 470.0, 89.0, 22.0 ],
+					"text" : "Instructions",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-49",
+					"linecount" : 28,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 330.0, 610.0, 150.0, 382.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 11,
+					"presentation_rect" : [ 10.549468994140625, 500.0, 640.0, 154.0 ],
+					"text" : "1) Connect the MIDI interface between your computer and 0-Coast before loading this patch.\n\n2) If you have firmware version 1.6.8 or above, enter the Program Pages on your 0-Coast by holding PGM_A until \n    you see MIDI_A and MIDI_B flash twice. You can ignore this step if your 0-Coast has an older version of the\n    firmware.\n\n3) Choose the MIDI port of your 0-Coast from the pull-down menu above.\n\n4) Change settings using the buttons and sliders.\n\n5) To save the settings on your 0-Coast and exit the Program Pages hold PGM_B.",
+					"textcolor" : [ 0.968627450980392, 0.968627450980392, 0.968627450980392, 1.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-53",
 					"maxclass" : "newobj",
@@ -83,23 +115,6 @@
 					"outlettype" : [ "flush" ],
 					"patching_rect" : [ 743.71875, 898.0, 43.0, 22.0 ],
 					"text" : "t flush"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 0,
-					"fontsize" : 11.0,
-					"id" : "obj-5",
-					"linecount" : 4,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1299.349121000000196, 496.0, 140.0, 56.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 73.549461364746094, 447.0, 514.0, 19.0 ],
-					"text" : " To save settings on the 0-Coast, hold PGM_A to enter the Program Pages, then hold PGM_B to save. ",
-					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
 			}
@@ -300,7 +315,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1471.583495999999968, 110.0, 61.0, 50.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 535.0, 256.5, 105.549468994140625, 47.0 ],
+					"presentation_rect" : [ 535.0, 266.5, 105.549468994140625, 47.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "1n", "2n", "2nt", "4n", "4nt", "8n", "8nt", "16n", "16nt" ],
@@ -308,7 +323,7 @@
 							"parameter_mmax" : 8,
 							"parameter_shortname" : "live.tab[5]",
 							"parameter_type" : 2,
-							"parameter_unitstyle" : 0
+							"parameter_unitstyle" : 9
 						}
 
 					}
@@ -494,7 +509,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1227.015625, 729.416625999999951, 81.5, 69.5 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 20.549468994140625, 265.0, 259.450531005859375, 20.0 ],
+					"presentation_rect" : [ 20.549468994140625, 275.0, 259.450531005859375, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "24", "36" ],
@@ -502,7 +517,7 @@
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.tab[5]",
 							"parameter_type" : 2,
-							"parameter_unitstyle" : 0
+							"parameter_unitstyle" : 9
 						}
 
 					}
@@ -610,7 +625,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 691.5, 860.625, 40.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 340.549468994140625, 275.0, 50.0, 20.0 ],
+					"presentation_rect" : [ 340.549468994140625, 285.0, 50.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "Panic", "Panic" ],
@@ -850,7 +865,7 @@
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.tab[5]",
 							"parameter_type" : 2,
-							"parameter_unitstyle" : 0
+							"parameter_unitstyle" : 9
 						}
 
 					}
@@ -1028,7 +1043,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 870.5, 459.999969000000021, 50.0, 40.333312999999997 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 290.0, 265.0, 40.0, 40.0 ],
+					"presentation_rect" : [ 290.0, 275.0, 40.0, 40.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "A", "B" ],
@@ -1036,7 +1051,7 @@
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.tab[5]",
 							"parameter_type" : 2,
-							"parameter_unitstyle" : 0
+							"parameter_unitstyle" : 9
 						}
 
 					}
@@ -1324,7 +1339,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 710.4375, 396.25, 44.0, 37.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 590.5494384765625, 112.0, 50.0, 37.0 ],
+					"presentation_rect" : [ 590.5494384765625, 122.0, 50.0, 37.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.dial[13]",
@@ -1369,7 +1384,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 580.0, 396.25, 44.0, 37.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 520.5494384765625, 112.0, 50.0, 37.0 ],
+					"presentation_rect" : [ 520.5494384765625, 122.0, 50.0, 37.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.dial[16]",
@@ -1427,7 +1442,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 330.0, 340.0, 60.0, 92.25 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 340.549468994140625, 110.0, 90.0, 40.0 ],
+					"presentation_rect" : [ 340.549468994140625, 120.0, 90.0, 40.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "Note", "Velocity", "Mod", "LFO" ],
@@ -1435,7 +1450,7 @@
 							"parameter_mmax" : 3,
 							"parameter_shortname" : "live.tab[2]",
 							"parameter_type" : 2,
-							"parameter_unitstyle" : 0
+							"parameter_unitstyle" : 9
 						}
 
 					}
@@ -1487,7 +1502,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 210.0, 340.0, 60.0, 92.25 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 230.549468994140625, 110.0, 90.0, 40.0 ],
+					"presentation_rect" : [ 230.549468994140625, 120.0, 90.0, 40.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "Note", "Velocity", "Mod", "LFO" ],
@@ -1495,7 +1510,7 @@
 							"parameter_mmax" : 3,
 							"parameter_shortname" : "live.tab[2]",
 							"parameter_type" : 2,
-							"parameter_unitstyle" : 0
+							"parameter_unitstyle" : 9
 						}
 
 					}
@@ -1523,7 +1538,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 80.0, 340.0, 80.0, 92.25 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 50.549468994140625, 110.0, 160.0, 40.0 ],
+					"presentation_rect" : [ 50.549468994140625, 120.0, 160.0, 40.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "All" ],
@@ -1531,7 +1546,7 @@
 							"parameter_mmax" : 16,
 							"parameter_shortname" : "live.tab",
 							"parameter_type" : 2,
-							"parameter_unitstyle" : 0
+							"parameter_unitstyle" : 9
 						}
 
 					}
@@ -1573,7 +1588,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 460.4375, 396.25, 44.0, 37.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 450.549468994140625, 112.0, 50.0, 37.0 ],
+					"presentation_rect" : [ 450.549468994140625, 122.0, 50.0, 37.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.dial[18]",
@@ -1686,7 +1701,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 5,
+							"revision" : 10,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2286,7 +2301,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 5,
+							"revision" : 10,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2556,7 +2571,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1196.25, 263.625, 84.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 423.549468994140625, 260.0, 65.0, 18.0 ],
+					"presentation_rect" : [ 423.549468994140625, 270.0, 65.0, 18.0 ],
 					"text" : "Send Clock",
 					"textcolor" : [ 0.862744987010956, 0.870588004589081, 0.878431022167206, 1.0 ],
 					"textjustification" : 1
@@ -2578,7 +2593,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1313.583495999999968, 100.0, 44.0, 48.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 490.5494384765625, 256.5, 44.0, 48.0 ],
+					"presentation_rect" : [ 490.5494384765625, 266.5, 44.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.dial[52]",
@@ -2612,7 +2627,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1196.25, 290.0, 75.969397999999998, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 421.049468994140625, 280.0, 70.0, 20.0 ],
+					"presentation_rect" : [ 421.049468994140625, 290.0, 70.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "Off", "On" ],
@@ -2620,7 +2635,7 @@
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.tab",
 							"parameter_type" : 2,
-							"parameter_unitstyle" : 0
+							"parameter_unitstyle" : 9
 						}
 
 					}
@@ -2649,7 +2664,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1048.515625, 750.5, 122.5, 69.5 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 20.549468994140625, 285.0, 259.450531005859375, 20.0 ],
+					"presentation_rect" : [ 20.549468994140625, 295.0, 259.450531005859375, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "Monophonic", "Polyphonic", "Touchscreen" ],
@@ -2657,7 +2672,7 @@
 							"parameter_mmax" : 2,
 							"parameter_shortname" : "live.tab[5]",
 							"parameter_type" : 2,
-							"parameter_unitstyle" : 0
+							"parameter_unitstyle" : 9
 						}
 
 					}
@@ -2712,7 +2727,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1131.5, 459.999969000000021, 44.0, 48.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 26.549468994140625, 350.0, 44.0, 48.0 ],
+					"presentation_rect" : [ 26.549468994140625, 360.0, 44.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.dial[62]",
@@ -2744,7 +2759,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1048.515625, 940.0, 286.0, 57.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 90.549468994140625, 329.0, 550.0, 102.0 ],
+					"presentation_rect" : [ 90.549468994140625, 339.0, 550.0, 102.0 ],
 					"range" : 37,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
@@ -2965,7 +2980,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 720.0, 647.875, 41.031334000000001, 44.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 330.549468994140625, 190.0, 40.0, 40.0 ],
+					"presentation_rect" : [ 330.549468994140625, 200.0, 40.0, 40.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "On", "Off" ],
@@ -2973,7 +2988,7 @@
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.tab",
 							"parameter_type" : 2,
-							"parameter_unitstyle" : 0
+							"parameter_unitstyle" : 9
 						}
 
 					}
@@ -3095,7 +3110,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 345.0, 650.5, 44.0, 37.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 143.549468994140625, 192.25, 44.0, 37.0 ],
+					"presentation_rect" : [ 143.549468994140625, 202.25, 44.0, 37.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.dial[11]",
@@ -3236,7 +3251,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 690.4375, 116.25, 44.0, 37.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 590.5494384765625, 42.0, 50.0, 37.0 ],
+					"presentation_rect" : [ 590.5494384765625, 52.0, 50.0, 37.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.dial[4]",
@@ -3281,7 +3296,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 560.0, 116.25, 44.0, 37.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 520.5494384765625, 42.0, 50.0, 37.0 ],
+					"presentation_rect" : [ 520.5494384765625, 52.0, 50.0, 37.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.dial[3]",
@@ -3339,7 +3354,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 310.0, 60.0, 60.0, 92.25 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 340.549468994140625, 40.0, 90.0, 40.0 ],
+					"presentation_rect" : [ 340.549468994140625, 50.0, 90.0, 40.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "Note", "Velocity", "Mod", "LFO" ],
@@ -3347,7 +3362,7 @@
 							"parameter_mmax" : 3,
 							"parameter_shortname" : "live.tab[2]",
 							"parameter_type" : 2,
-							"parameter_unitstyle" : 0
+							"parameter_unitstyle" : 9
 						}
 
 					}
@@ -3396,7 +3411,7 @@
 					"fontsize" : 10.0,
 					"hint" : "0-Coast MIDI port",
 					"id" : "obj-357",
-					"items" : [ "AU DLS Synth 1", ",", "IAC Driver Bus 1", ",", "Network Session 1", ",", "Scarlett 18i6 USB", ",", "iCM4 Front", ",", "iCM4 0Coast", ",", "iCM4 Disting", ",", "iCM4 Jack4", ",", "iCM4 iPad", ",", "iCM4 USB 2", ",", "iCM4 MicroFreak", ",", "iCM4 SoundStudy", ",", "iCM4 CVpal", ",", "iCM4 Host4", ",", "iCM4 Host5", ",", "iCM4 Host6", ",", "iCM4 Ethernet 1", ",", "iCM4 Ethernet 2", ",", "iCM4 Ethernet 3", ",", "iCM4 Ethernet 4", ",", "from Max 1", ",", "from Max 2" ],
+					"items" : [ "AU DLS Synth 1", ",", "Scarlett 18i6 USB", ",", "iCM4 Front", ",", "iCM4 NoCoast", ",", "iCM4 Disting", ",", "iCM4 Knobs", ",", "iCM4 USB1", ",", "iCM4 USB2", ",", "iCM4 CVpal", ",", "iCM4 SoundStudy", ",", "iCM4 nanoKONTROL", ",", "iCM4 Host4", ",", "iCM4 Host5", ",", "iCM4 Host6", ",", "iCM4 Ethernet1", ",", "iCM4 Ethernet2", ",", "iCM4 Ethernet3", ",", "iCM4 Ethernet4", ",", "from Max 1", ",", "from Max 2" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -3404,7 +3419,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 968.5, 85.5, 160.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 441.049468994140625, 195.5, 180.0, 20.0 ],
+					"presentation_rect" : [ 441.049468994140625, 205.5, 180.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_annotation_name" : "MIDI Port",
@@ -3433,7 +3448,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1024.0, 43.5, 94.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 484.049468994140625, 180.0, 94.0, 18.0 ],
+					"presentation_rect" : [ 484.049468994140625, 190.0, 94.0, 18.0 ],
 					"text" : "0-Coast MIDI Port",
 					"textcolor" : [ 0.862744987010956, 0.870588004589081, 0.878431022167206, 1.0 ],
 					"textjustification" : 1
@@ -3455,7 +3470,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 577.0, 650.5, 38.947989999999997, 44.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 260.549468994140625, 190.0, 40.0, 40.499984741210938 ],
+					"presentation_rect" : [ 260.549468994140625, 200.0, 40.0, 40.499984741210938 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "Reg", "Latch" ],
@@ -3463,7 +3478,7 @@
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.tab",
 							"parameter_type" : 2,
-							"parameter_unitstyle" : 0
+							"parameter_unitstyle" : 9
 						}
 
 					}
@@ -3489,7 +3504,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 487.0, 650.5, 41.031334000000001, 44.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 210.549468994140625, 190.0, 40.0, 40.499984741210938 ],
+					"presentation_rect" : [ 210.549468994140625, 200.0, 40.0, 40.499984741210938 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "On", "Off" ],
@@ -3497,7 +3512,7 @@
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.tab",
 							"parameter_type" : 2,
-							"parameter_unitstyle" : 0
+							"parameter_unitstyle" : 9
 						}
 
 					}
@@ -3519,7 +3534,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 698.5, 12.25, 57.0, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 581.5494384765625, 10.0, 68.0, 18.0 ],
+					"presentation_rect" : [ 581.5494384765625, 20.0, 68.0, 18.0 ],
 					"text" : "Min Velocity",
 					"textcolor" : [ 0.862744987010956, 0.870588004589081, 0.878431022167206, 1.0 ],
 					"textjustification" : 1
@@ -3536,7 +3551,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 564.5625, 12.25, 64.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 515.0494384765625, 10.0, 61.0, 18.0 ],
+					"presentation_rect" : [ 515.0494384765625, 20.0, 61.0, 18.0 ],
 					"text" : "Aftertouch",
 					"textcolor" : [ 0.862744987010956, 0.870588004589081, 0.878431022167206, 1.0 ],
 					"textjustification" : 1
@@ -3553,7 +3568,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 442.5, 12.25, 69.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 441.049468994140625, 10.0, 69.0, 18.0 ],
+					"presentation_rect" : [ 441.049468994140625, 20.0, 69.0, 18.0 ],
 					"text" : "Bend Range",
 					"textcolor" : [ 0.862744987010956, 0.870588004589081, 0.878431022167206, 1.0 ],
 					"textjustification" : 1
@@ -3577,7 +3592,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 190.0, 60.0, 60.0, 92.25 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 230.549468994140625, 40.0, 90.0, 40.0 ],
+					"presentation_rect" : [ 230.549468994140625, 50.0, 90.0, 40.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "Note", "Velocity", "Mod", "LFO" ],
@@ -3585,7 +3600,7 @@
 							"parameter_mmax" : 3,
 							"parameter_shortname" : "live.tab[2]",
 							"parameter_type" : 2,
-							"parameter_unitstyle" : 0
+							"parameter_unitstyle" : 9
 						}
 
 					}
@@ -3613,7 +3628,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 60.0, 60.0, 80.0, 92.25 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 50.549468994140625, 40.0, 160.0, 40.0 ],
+					"presentation_rect" : [ 50.549468994140625, 50.0, 160.0, 40.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "All" ],
@@ -3621,7 +3636,7 @@
 							"parameter_mmax" : 16,
 							"parameter_shortname" : "live.tab",
 							"parameter_type" : 2,
-							"parameter_unitstyle" : 0
+							"parameter_unitstyle" : 9
 						}
 
 					}
@@ -3642,7 +3657,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 720.0, 610.0, 63.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 319.049468994140625, 160.750015258789062, 63.0, 18.0 ],
+					"presentation_rect" : [ 319.049468994140625, 170.750015258789062, 63.0, 18.0 ],
 					"text" : "MIDI Clock",
 					"textcolor" : [ 0.862744987010956, 0.870588004589081, 0.878431022167206, 1.0 ],
 					"textjustification" : 1
@@ -3659,7 +3674,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 30.0, 610.0, 44.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 18.549468994140625, 161.0, 44.0, 18.0 ],
+					"presentation_rect" : [ 18.549468994140625, 171.0, 44.0, 18.0 ],
 					"text" : "Legato",
 					"textcolor" : [ 0.862744987010956, 0.870588004589081, 0.878431022167206, 1.0 ],
 					"textjustification" : 1
@@ -3681,7 +3696,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 30.0, 650.5, 41.031334000000001, 44.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 18.549468994140625, 192.25, 40.0, 40.499984741210938 ],
+					"presentation_rect" : [ 18.549468994140625, 202.25, 40.0, 40.499984741210938 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "On", "Off" ],
@@ -3689,7 +3704,7 @@
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.tab",
 							"parameter_type" : 2,
-							"parameter_unitstyle" : 0
+							"parameter_unitstyle" : 9
 						}
 
 					}
@@ -3710,7 +3725,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 490.0, 610.0, 67.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 220.549468994140625, 161.0, 67.0, 18.0 ],
+					"presentation_rect" : [ 220.549468994140625, 171.0, 67.0, 18.0 ],
 					"text" : "Arpeggiator",
 					"textcolor" : [ 0.862744987010956, 0.870588004589081, 0.878431022167206, 1.0 ],
 					"textjustification" : 1
@@ -3743,7 +3758,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 350.0, 610.0, 73.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 140.549468994140625, 161.0, 61.0, 18.0 ],
+					"presentation_rect" : [ 140.549468994140625, 171.0, 61.0, 18.0 ],
 					"text" : "Tempo Div",
 					"textcolor" : [ 0.862744987010956, 0.870588004589081, 0.878431022167206, 1.0 ],
 					"textjustification" : 1
@@ -3760,7 +3775,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 190.0, 610.0, 66.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 70.549468994140625, 161.0, 66.0, 18.0 ],
+					"presentation_rect" : [ 70.549468994140625, 171.0, 66.0, 18.0 ],
 					"text" : "Portamento",
 					"textcolor" : [ 0.862744987010956, 0.870588004589081, 0.878431022167206, 1.0 ],
 					"textjustification" : 1
@@ -3778,7 +3793,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 318.0, 12.25, 44.0, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 351.049468994140625, 10.0, 69.0, 18.0 ],
+					"presentation_rect" : [ 351.049468994140625, 20.0, 69.0, 18.0 ],
 					"text" : "Gate Source",
 					"textcolor" : [ 0.862744987010956, 0.870588004589081, 0.878431022167206, 1.0 ],
 					"textjustification" : 1
@@ -3796,7 +3811,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 190.0, 12.25, 44.0, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 245.049468994140625, 10.0, 61.0, 18.0 ],
+					"presentation_rect" : [ 245.049468994140625, 20.0, 61.0, 18.0 ],
 					"text" : "CV Source",
 					"textcolor" : [ 0.862744987010956, 0.870588004589081, 0.878431022167206, 1.0 ],
 					"textjustification" : 1
@@ -3814,7 +3829,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 66.625, 12.25, 50.0, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 93.549468994140625, 10.0, 74.0, 18.0 ],
+					"presentation_rect" : [ 93.549468994140625, 20.0, 74.0, 18.0 ],
 					"text" : "MIDI Channel",
 					"textcolor" : [ 0.862744987010956, 0.870588004589081, 0.878431022167206, 1.0 ],
 					"textjustification" : 1
@@ -3836,7 +3851,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 190.0, 650.5, 44.0, 37.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 83.549468994140625, 192.25, 44.0, 37.0 ],
+					"presentation_rect" : [ 83.549468994140625, 202.25, 44.0, 37.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.dial[43]",
@@ -3868,7 +3883,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 440.4375, 116.25, 44.0, 37.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 450.549468994140625, 40.0, 50.0, 37.0 ],
+					"presentation_rect" : [ 450.549468994140625, 50.0, 50.0, 37.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.dial[47]",
@@ -3897,7 +3912,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 20.0, 80.0, 20.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.549468994140625, 30.0, 640.0, 60.0 ],
+					"presentation_rect" : [ 10.549468994140625, 40.0, 640.0, 60.0 ],
 					"proportion" : 0.39,
 					"pt1" : [ 0.509901, 0.069565 ],
 					"pt2" : [ 0.5, 0.95 ]
@@ -3916,7 +3931,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 40.0, 360.0, 20.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.549468994140625, 100.0, 640.0, 60.0 ],
+					"presentation_rect" : [ 10.549468994140625, 110.0, 640.0, 60.0 ],
 					"proportion" : 0.39,
 					"pt1" : [ 0.509901, 0.069565 ],
 					"pt2" : [ 0.5, 0.95 ]
@@ -3935,7 +3950,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 425.0, 610.0, 20.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 140.549468994140625, 180.0, 50.0, 60.0 ],
+					"presentation_rect" : [ 140.549468994140625, 190.0, 50.0, 60.0 ],
 					"proportion" : 0.39,
 					"pt1" : [ 0.509901, 0.069565 ],
 					"pt2" : [ 0.5, 0.95 ]
@@ -3954,7 +3969,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 76.0, 610.0, 20.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.549468994140625, 180.0, 60.0, 60.0 ],
+					"presentation_rect" : [ 10.549468994140625, 190.0, 60.0, 60.0 ],
 					"proportion" : 0.39,
 					"pt1" : [ 0.509901, 0.069565 ],
 					"pt2" : [ 0.5, 0.95 ]
@@ -3973,7 +3988,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 560.0, 610.0, 20.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 200.549468994140625, 180.0, 110.0, 60.0 ],
+					"presentation_rect" : [ 200.549468994140625, 190.0, 110.0, 60.0 ],
 					"proportion" : 0.39,
 					"pt1" : [ 0.509901, 0.069565 ],
 					"pt2" : [ 0.5, 0.95 ]
@@ -3992,7 +4007,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 255.625, 610.0, 20.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 80.549468994140625, 180.0, 50.0, 60.0 ],
+					"presentation_rect" : [ 80.549468994140625, 190.0, 50.0, 60.0 ],
 					"proportion" : 0.39,
 					"pt1" : [ 0.509901, 0.069565 ],
 					"pt2" : [ 0.5, 0.95 ]
@@ -4028,7 +4043,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1167.015625, 900.0, 20.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.549468994140625, 320.0, 640.0, 120.0 ],
+					"presentation_rect" : [ 10.549468994140625, 330.0, 640.0, 120.0 ],
 					"proportion" : 0.39,
 					"pt1" : [ 0.509901, 0.069565 ],
 					"pt2" : [ 0.5, 0.95 ]
@@ -4047,7 +4062,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1280.583495999999968, 263.625, 20.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 410.549468994140625, 250.0, 240.0, 60.0 ],
+					"presentation_rect" : [ 410.549468994140625, 260.0, 240.0, 60.0 ],
 					"proportion" : 0.39,
 					"pt1" : [ 0.509901, 0.069565 ],
 					"pt2" : [ 0.5, 0.95 ]
@@ -4083,7 +4098,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 90.0, 279.5, 20.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.549468994140625, 250.0, 389.450531005859375, 80.0 ],
+					"presentation_rect" : [ 10.549468994140625, 260.0, 389.450531005859375, 80.0 ],
 					"proportion" : 0.39,
 					"pt1" : [ 0.509901, 0.069565 ],
 					"pt2" : [ 0.5, 0.95 ]
@@ -4102,7 +4117,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 321.0, 194.0, 20.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 319.049468994140625, 180.0, 63.0, 60.0 ],
+					"presentation_rect" : [ 319.049468994140625, 190.0, 63.0, 60.0 ],
 					"proportion" : 0.39,
 					"pt1" : [ 0.509901, 0.069565 ],
 					"pt2" : [ 0.5, 0.95 ]
@@ -5503,14 +5518,14 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "CoastExpressSavedSettings.coll",
-				"bootpath" : "~/Documents/ Projects/Coast Works/Coast Works/Max/lib",
+				"bootpath" : "~/Documents/ Projects/Coast Express/Coast Express/Max/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ce.Param.maxpat",
-				"bootpath" : "~/Documents/ Projects/Coast Works/Coast Works/Max/lib",
+				"bootpath" : "~/Documents/ Projects/Coast Express/Coast Express/Max/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "JSON",
 				"implicit" : 1

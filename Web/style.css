@@ -130,8 +130,6 @@ select {
 }
 
 #save_instructions {
-	margin-top: 10px;
-	font-style: italic;
 	display: inline-block;
 	font-size: 0.9em;
 }
